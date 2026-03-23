@@ -1,4 +1,4 @@
-const productosJSON = `[
+const catalogo = `[
   {
     "id": "TSH01",
     "nombre": "MACACARENA",
