@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors'); 
 
 const camisetasRoutes = require('./routes/catalogo.routes');
-const comandasRoutes = require('./routes/comandas.routes');
+const comandasRoutes = require('./routes/comandas.route');
 
 const app = express();
 const PORT = 3000;
@@ -25,3 +25,12 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`Servidor TeeLab API corriendo en http://localhost:${PORT}`);
 });
+
+
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`🚀 Servidor TeeLab API corriendo en http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
