@@ -1,4 +1,4 @@
-# Pr02---TeeLab-API-Rest
+# Pr02 - TeeLab-API-Rest
 
 ## Cómo arrancar el proyecto
 
