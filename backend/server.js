@@ -29,7 +29,7 @@ app.listen(PORT, () => {
 
 if (require.main === module) {
     app.listen(PORT, () => {
-        console.log(`🚀 Servidor TeeLab API corriendo en http://localhost:${PORT}`);
+        console.log(`Servidor TeeLab API corriendo en http://localhost:${PORT}`);
     });
 }
 
