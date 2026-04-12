@@ -10,10 +10,49 @@
     <header>
         <h1>Catálogo TeeLab</h1>
     </header>
+
+    <section id="filtros" class="barra-filtros">
+        <input type="text" id="filtro-texto" placeholder="Buscar camiseta...">
+        
+        <select id="filtro-talla">
+            <option value="">Todas las tallas</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <select id="filtro-color">
+            <option value="">Todos los colores</option>
+            <option value="negro">Negro</option>
+            <option value="blanco">Blanco</option>
+            <option value="gris">Gris</option>
+            <option value="azul">Azul</option>
+        </select>
+
+        <select id="filtro-orden">
+            <option value="">Ordenar por defecto</option>
+            <option value="precio_asc">Precio: Menor a Mayor</option>
+            <option value="precio_desc">Precio: Mayor a Menor</option>
+            <option value="nombre_asc">Nombre: A - Z</option>
+            <option value="nombre_desc">Nombre: Z - A</option>
+        </select>
+        
+        <button id="btn-filtrar">Aplicar Filtros</button>
+    </section>
+
     <main>
         <section id="contenedor-productos" class="grid-productos"></section>
     </main>
 
     <script src="app.js"></script>
 </body>
+
+<aside id="carrito-container" class="carrito">
+        <h2>Mi Carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p class="total">Total: €<span id="total-carrito">0.00</span></p>
+        <button id="btn-finalizar-compra">Finalizar Compra</button>
+    </aside>
+
 </html>
